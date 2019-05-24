@@ -67,6 +67,13 @@ if test -f $(which Rscript); then
     ./plot.r
   fi
 ```
+### on my local, the results mean throughput looks like:
+
+<object data="https://github.com/rahulunair/tensorflow_benchmarks_cpu/blob/master/workspace/plots/tf_mkl_non_mkl.pdf" type="application/pdf" width="500px" height="700px">
+    <embed src="https://github.com/rahulunair/tensorflow_benchmarks_cpu/blob/master/workspace/plots/tf_mkl_non_mkl.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/rahulunair/tensorflow_benchmarks_cpu/blob/master/workspace/plots/tf_mkl_non_mkl.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 ### clean up, nuke workspace
 
