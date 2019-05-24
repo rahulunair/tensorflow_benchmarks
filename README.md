@@ -15,26 +15,20 @@ Run this in your shell
 
 #### let's start with a clean workspace
 
-```bash
-  rm  ./workspace/
-  read -p "yeah, that was a mis direct, ARE YOU SURE THAT YOU WANT TO DELETE WORKSPACE DIRECTORY?" ans
-  while true
-  do
-   case $ans in 
-   [yY]* ) rm -rf ./workspace
-   esac
-  done
+```zsh
+  read "?ARE YOU SURE YOU WANT TO DELETE ./workspace DIRECTORY?"
+  rm -rf ./workspace
 ```
 #### create a conda environment with non-mkl version of TensorFlow
 
-```bash
+```zsh
   echo "creating a conda env with non mkl TensorFlow" &&\
     conda env create --file=./no_mkl_environment.yml -q &&\
     conda activate tf-no_mkl
 ```
 ##### benchmark, collect data and remove the conda environment
 
-```bash
+```zsh
   ./bench_tf.sh &&\
     conda deactivate &&\
     conda env remove -n tf-no_mkl
@@ -42,7 +36,7 @@ Run this in your shell
 
 #### create a conda environment with mkl version of TensorFlow
 
-```bash
+```zsh
   echo "creating a conda env with mkl based TensorFlow" &&\
     conda env create --file=./mkl_environment.yml -q &&\
     conda activate tf-mkl
@@ -50,20 +44,20 @@ Run this in your shell
 
 ##### run benchmark and save data; remove conda env 
 
-```bash
+```zsh
   ./bench_tf.sh
     conda deactivate &&\
     conda env remove -n tf-mkl
 ```  
 #### minimal etl, filter and unify mean throughput for different batches
   
-```bash
+```zsh
   ./etl.sh
 ```
 
 #### plot the data if Rscript is available
 
-```bash
+```zsh
 if test -f $(which Rscript); then
     ./plot.r
   fi
@@ -71,6 +65,6 @@ if test -f $(which Rscript); then
 
 ### clean up, nuke workspace
 
-```bash
+```zsh
   rm -rf ./workspace/
 ```
