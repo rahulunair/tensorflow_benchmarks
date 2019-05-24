@@ -1,6 +1,6 @@
 require(ggplot2)
 require(tidyverse)
-df <- read.csv("./tf_final.log", header=TRUE)
+df <- read.csv("./workspace/logs/processed/tf_final.log", header=TRUE)
 tidy_df <- tidyr::gather(
   data=df,
   key="mkldnn",
@@ -15,4 +15,4 @@ plt <- ggplot(data=tidy_df, mapping=aes(x=batch, y=throughput, fill=mkldnn)) +
        theme(plot.title = element_text(hjust = 0.5)) + 
        xlab("Batch Size")  + ylab("Throughput (images/sec)") +
        scale_fill_brewer(palette="Paired")
-plt
+ggsave(filename="./workspace/plots/tf_mkl_non_mkl.pdf", plt, device="pdf")

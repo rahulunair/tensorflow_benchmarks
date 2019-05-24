@@ -26,6 +26,7 @@ if [ "$MKL_AVL" = "True" ]; then
         --forward_only --data_name=cifar10 \
         --model=resnet20 --batch_size=$batch --mkl | tee -a ./logs/raw/$FILENAME | tail -n 2 | head -n 1 | tr ':' $'\n' | tail -n 1 >> ./logs/processed/$FILENAME
   done
+  echo "Log saved as:: ./logs/raw/$FILENAME"
   for batch in 1 32 64 128 256; do
       echo "ResNet20 inference with batch size: $batch"
       python benchmarks/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py \
@@ -33,6 +34,7 @@ if [ "$MKL_AVL" = "True" ]; then
         --forward_only --data_name=cifar10 \
         --model=resnet20 --batch_size=$batch --mkl --data_format=NCHW | tee -a ./logs/raw/nchw_$FILENAME | tail -n 2 | head -n 1 | tr ':' $'\n' | tail -n 1 >> ./logs/processed/nchw_$FILENAME
   done
+  echo "Log saved as:: ./logs/raw/nchw_$FILENAME"
 else
   FILENAME="tf_non_mkl_resnet20.log"
   for batch in 1 32 64 128 256; do
@@ -42,5 +44,5 @@ else
       --forward_only --data_name=cifar10 \
       --model=resnet20 --batch_size=$batch | tee -a ./logs/raw/$FILENAME | tail -n 2 | head -n 1 | tr ':' $'\n' | tail -n 1 >> ./logs/processed/$FILENAME
   done
+  echo "Log saved as:: ./logs/raw/$FILENAME"
 fi
-echo "Log saved to:: $FILENAME"
