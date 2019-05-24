@@ -1,0 +1,170 @@
+TensorFlow:  1.13
+Model:       resnet20
+Dataset:     cifar10 (synthetic)
+Mode:        forward only
+SingleSess:  False
+Batch size:  1 global
+             1 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/cpu:0']
+NUMA bind:   False
+Data format: NHWC
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 124.0 +/- 0.0 (jitter = 0.0)	0.000	0.000	1.000
+10	images/sec: 98.4 +/- 7.7 (jitter = 9.9)	0.000	0.000	0.000
+20	images/sec: 83.4 +/- 5.9 (jitter = 27.7)	0.000	0.000	0.000
+30	images/sec: 92.4 +/- 4.6 (jitter = 15.1)	0.000	0.000	0.000
+40	images/sec: 95.3 +/- 3.7 (jitter = 14.6)	0.000	0.000	1.000
+50	images/sec: 96.2 +/- 3.2 (jitter = 14.4)	0.000	0.000	1.000
+60	images/sec: 96.8 +/- 3.0 (jitter = 15.1)	0.000	0.000	0.000
+70	images/sec: 99.5 +/- 2.7 (jitter = 12.0)	0.000	0.000	0.000
+80	images/sec: 100.4 +/- 2.4 (jitter = 12.4)	0.000	0.000	1.000
+90	images/sec: 100.7 +/- 2.2 (jitter = 14.4)	0.000	0.000	0.000
+100	images/sec: 101.6 +/- 2.1 (jitter = 14.4)	0.000	0.000	0.000
+----------------------------------------------------------------
+total images/sec: 100.74
+----------------------------------------------------------------
+TensorFlow:  1.13
+Model:       resnet20
+Dataset:     cifar10 (synthetic)
+Mode:        forward only
+SingleSess:  False
+Batch size:  32 global
+             32 per device
+Num batches: 100
+Num epochs:  0.06
+Devices:     ['/cpu:0']
+NUMA bind:   False
+Data format: NHWC
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 1208.4 +/- 0.0 (jitter = 0.0)	0.000	0.156	0.562
+10	images/sec: 1241.2 +/- 85.2 (jitter = 101.3)	0.000	0.125	0.531
+20	images/sec: 1195.0 +/- 71.4 (jitter = 156.3)	0.000	0.094	0.688
+30	images/sec: 1252.6 +/- 58.0 (jitter = 167.2)	0.000	0.062	0.469
+40	images/sec: 1248.3 +/- 49.0 (jitter = 198.9)	0.000	0.125	0.531
+50	images/sec: 1264.7 +/- 43.2 (jitter = 220.4)	0.000	0.062	0.312
+60	images/sec: 1266.1 +/- 43.6 (jitter = 266.7)	0.000	0.062	0.375
+70	images/sec: 1286.5 +/- 40.9 (jitter = 242.5)	0.000	0.062	0.562
+80	images/sec: 1286.7 +/- 38.3 (jitter = 248.3)	0.000	0.219	0.438
+90	images/sec: 1303.4 +/- 37.7 (jitter = 256.0)	0.000	0.156	0.531
+100	images/sec: 1288.9 +/- 36.7 (jitter = 274.1)	0.000	0.094	0.344
+----------------------------------------------------------------
+total images/sec: 1283.54
+----------------------------------------------------------------
+TensorFlow:  1.13
+Model:       resnet20
+Dataset:     cifar10 (synthetic)
+Mode:        forward only
+SingleSess:  False
+Batch size:  64 global
+             64 per device
+Num batches: 100
+Num epochs:  0.13
+Devices:     ['/cpu:0']
+NUMA bind:   False
+Data format: NHWC
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 1181.7 +/- 0.0 (jitter = 0.0)	0.000	0.141	0.578
+10	images/sec: 1637.2 +/- 116.2 (jitter = 334.8)	0.000	0.125	0.625
+20	images/sec: 1782.2 +/- 82.6 (jitter = 345.5)	0.000	0.109	0.469
+30	images/sec: 1832.6 +/- 69.7 (jitter = 395.2)	0.000	0.141	0.578
+40	images/sec: 1836.8 +/- 64.6 (jitter = 337.2)	0.000	0.109	0.578
+50	images/sec: 1796.5 +/- 60.0 (jitter = 383.4)	0.000	0.031	0.438
+60	images/sec: 1744.1 +/- 55.4 (jitter = 422.1)	0.000	0.125	0.484
+70	images/sec: 1800.9 +/- 54.9 (jitter = 406.7)	0.000	0.047	0.453
+80	images/sec: 1670.8 +/- 56.7 (jitter = 480.4)	0.000	0.188	0.641
+90	images/sec: 1651.9 +/- 53.1 (jitter = 491.5)	0.000	0.094	0.547
+100	images/sec: 1583.3 +/- 52.7 (jitter = 561.5)	0.000	0.141	0.688
+----------------------------------------------------------------
+total images/sec: 1579.33
+----------------------------------------------------------------
+TensorFlow:  1.13
+Model:       resnet20
+Dataset:     cifar10 (synthetic)
+Mode:        forward only
+SingleSess:  False
+Batch size:  128 global
+             128 per device
+Num batches: 100
+Num epochs:  0.26
+Devices:     ['/cpu:0']
+NUMA bind:   False
+Data format: NHWC
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 2504.6 +/- 0.0 (jitter = 0.0)	0.000	0.109	0.555
+10	images/sec: 3219.9 +/- 507.8 (jitter = 1622.5)	0.000	0.062	0.453
+20	images/sec: 2885.9 +/- 323.8 (jitter = 934.9)	0.000	0.125	0.578
+30	images/sec: 2987.9 +/- 266.8 (jitter = 1383.6)	0.000	0.086	0.547
+40	images/sec: 3313.2 +/- 228.1 (jitter = 1307.9)	0.000	0.086	0.453
+50	images/sec: 3533.1 +/- 203.8 (jitter = 1563.4)	0.000	0.062	0.445
+60	images/sec: 3630.2 +/- 191.9 (jitter = 1633.3)	0.000	0.109	0.445
+70	images/sec: 3573.2 +/- 177.0 (jitter = 1763.2)	0.000	0.062	0.469
+80	images/sec: 3418.4 +/- 167.2 (jitter = 1891.6)	0.000	0.078	0.508
+90	images/sec: 3232.0 +/- 160.6 (jitter = 1748.9)	0.000	0.094	0.516
+100	images/sec: 3114.2 +/- 152.4 (jitter = 1713.9)	0.000	0.094	0.477
+----------------------------------------------------------------
+total images/sec: 3108.10
+----------------------------------------------------------------
+TensorFlow:  1.13
+Model:       resnet20
+Dataset:     cifar10 (synthetic)
+Mode:        forward only
+SingleSess:  False
+Batch size:  256 global
+             256 per device
+Num batches: 100
+Num epochs:  0.51
+Devices:     ['/cpu:0']
+NUMA bind:   False
+Data format: NHWC
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+Running warm up
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 4851.5 +/- 0.0 (jitter = 0.0)	0.000	0.090	0.488
+10	images/sec: 4335.3 +/- 222.0 (jitter = 262.0)	0.000	0.121	0.520
+20	images/sec: 4131.6 +/- 185.6 (jitter = 530.3)	0.000	0.043	0.406
+30	images/sec: 4328.6 +/- 135.6 (jitter = 359.3)	0.000	0.109	0.484
+40	images/sec: 4376.3 +/- 105.6 (jitter = 362.0)	0.000	0.098	0.535
+50	images/sec: 4279.7 +/- 103.6 (jitter = 419.5)	0.000	0.129	0.535
+60	images/sec: 4281.6 +/- 93.7 (jitter = 362.0)	0.000	0.094	0.484
+70	images/sec: 4259.0 +/- 87.1 (jitter = 357.5)	0.000	0.090	0.508
+80	images/sec: 4282.8 +/- 78.4 (jitter = 372.9)	0.000	0.113	0.480
+90	images/sec: 4305.5 +/- 71.7 (jitter = 374.2)	0.000	0.133	0.520
+100	images/sec: 4338.3 +/- 65.8 (jitter = 369.3)	0.000	0.074	0.445
+----------------------------------------------------------------
+total images/sec: 4333.98
+----------------------------------------------------------------
