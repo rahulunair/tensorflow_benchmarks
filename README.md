@@ -1,12 +1,17 @@
-### tensorflow_benchmarks
+### tensorflow benchmarks on CPU
 
 Tensorflow MKL vs Non-MKL benchmarks on Intel(R) Core(TM) i9-7900X CPU @ 3.30GHz 
 Model used:: ResNet50
 Essentially to answer questions like, 
 
-- why mkl version is slow vs non mkl version? **it depends**
-- will mkl version be always fast **no..**
-- what is the ideal batch size  **well.. yeah, its a bit of trial and error..in most cases for higher batch size, use MKL-DNN based version**
+- why mkl version is slow vs non mkl version?
+  **it depends**
+
+- will mkl version be always fast? 
+  **no..**
+
+- what is the ideal batch size?
+  **well.. yeah, its a bit of trial and error..in most cases for higher batch size, use MKL-DNN based version**
 
 ## how to run?
 This benchmarks use conda package manager, I assume you have it installed on your system
